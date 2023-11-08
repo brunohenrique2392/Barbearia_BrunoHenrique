@@ -1,0 +1,168 @@
+
+/*zerando o css*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+}
+
+/* fundo-tela*/
+
+html{
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    color: white;
+    font-family:  'Lato', sans-serif;
+
+}
+
+body{
+    background: linear-gradient(rgba(17, 17, 17, 0.8),rgba(20, 20, 20, 1)), url(fundo.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+
+}
+/*menu-Header NavBar */
+
+header{
+    width: 100%;
+    height: 7vh;
+    background-color: rgba(22, 22, 22, 0.2);
+}
+
+.menu-content{
+text-transform: uppercase;
+height: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+font-size: 2.4rem;
+top:16%;
+}
+.logo {
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+    position: fixed;
+    top: -15%;
+    left: -2%;
+    display: inline;
+}
+
+.menu-content .list-itens{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.menu-content .list-itens a {
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    transform: 1ms ease-in;
+    position: relative;
+}
+
+.menu-content .list-itens a:before {
+    content: " ";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color:#A98D4E;
+    transition: all 0.4s ease;
+}
+
+.menu-content .list-itens a:hover:before {
+    width: 100%;
+}
+
+/* centro conteudo principal*/
+
+main{
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-content{
+    
+}
+
+/*textos principal*/
+
+.primary-text{
+    width: 850px;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.second-text{
+    margin-bottom: 7rem;
+    font-size: 2rem;
+    color:white;
+    text-transform: uppercase;
+    
+}
+
+.primary-text, .second-text {
+    text-decoration: none;
+}
+
+/*botões */
+
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.btns button{
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: 20px;
+    position: relative;
+    transition: 0.30s ease-in;
+}
+
+.btns button:hover{
+    color: #A98D4E;
+    border:1px solid #A98D4E;
+    transition: 0.30s;
+    /* background-color: rgba(61, 61 , 61, 1.0); */
+}
+/* .btns button::before{
+    content: "";
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 60px;
+    z-index: -1;
+    border: none;
+}
+
+.btns button:hover::before{
+    width: 100%;
+
+} */
+
+
